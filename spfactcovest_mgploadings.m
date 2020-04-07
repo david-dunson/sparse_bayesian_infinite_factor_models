@@ -53,7 +53,7 @@ for g = 1:rep
 
     % --- Initial values --- %
     ps=gamrnd(as,1/bs,p,1); Sigma=diag(1./ps);                  % Sigma = diagonal residual covariance
-    Lambda = zeros(p,k);  ta =  normrnd(0,1,[n,k]);             % factor loadings & latent factors
+    Lambda = zeros(p,k);  eta =  normrnd(0,1,[n,k]);             % factor loadings & latent factors
     meta = zeros(n,k); veta = eye(k);                           % latent factor distribution = standrad normal
                                 
     psijh = gamrnd(df/2,2/df,[p,k]);                            % local shrinkage coefficients
