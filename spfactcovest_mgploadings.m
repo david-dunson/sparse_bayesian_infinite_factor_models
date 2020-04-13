@@ -96,7 +96,7 @@ for g = 1:rep
         end
 
         %------Update psi_{jh}'s------%
-        psijh = gamrnd(df/2 + 0.5,1./(df/2 + bsxfun(@times,Lambda.^2,tauh')));
+        psijh = gamrnd(df/2 + 0.5,2./(df + bsxfun(@times,Lambda.^2,tauh')));
 
         %------Update delta & tauh------%
         mat = bsxfun(@times,psijh,Lambda.^2);
